@@ -21,6 +21,18 @@ export default new Router({
       // which is lazy-loaded when the route is visited.
       component: () =>
         import(/* webpackChunkName: "about" */ "./views/About.vue")
+    },
+    {
+      path: "/geolocation",
+      name: "geolocation",
+      component: () =>
+        import(/* webpackChunkName: "geolocation" */ "./views/Geolocation.vue")
+    },
+    {
+      path: "/camera",
+      name: "camera",
+      component: () =>
+        import(/* webpackChunkName: "camera" */ "./views/Camera.vue")
     }
   ]
 });
